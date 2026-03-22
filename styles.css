@@ -1,62 +1,35 @@
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
 }
 
-.header {
-  text-align: center;
-  padding: 20px;
-  background-color: white;
+h1 {
+    color: #333;
+    font-size: 2.5em;
 }
 
-.header h1 {
-  font-size: 2.5em;
-  color: blue;
-  animation: fadeIn 2s;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-nav {
-  background-color: blue;
-  padding: 15px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-.section {
-  padding: 40px 0;
-  background-color: white;
-}
-
-.section:nth-child(even) {
-  background-color: #f4f4f4;
+p {
+    color: #666;
+    line-height: 1.5;
 }
 
 .footer {
-  text-align: center;
-  padding: 20px;
-  background-color: blue;
-  color: white;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f8f8f8;
 }
 
-.footer p {
-  margin: 0;
+/* Animated H1 Heading */
+h1.animated {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
