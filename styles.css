@@ -1,41 +1,39 @@
-.main {
-  background-color: white;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-h1 {
-  font-size: 2em;
-  background: linear-gradient(90deg, blue, white);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradientAnimation 3s ease infinite;
+.header {
+    text-align: center;
+    padding: 50px;
+    animation: gradientAnimation 3s infinite;
+    color: white;
 }
 
 @keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+    0% { background: linear-gradient(270deg, blue, white); }
+    50% { background: linear-gradient(270deg, white, blue); }
+    100% { background: linear-gradient(270deg, blue, white); }
 }
 
-h1.waveEffect {
-  display: inline-block;
-  animation: wave 1.5s infinite;
+.header h1 {
+    animation: glow 1.5s infinite alternate;
 }
 
-@keyframes wave {
-  0%, 100% { transform: translateY(0); }
-  25% { transform: translateY(-10px); }
-  50% { transform: translateY(5px); }
-  75% { transform: translateY(-5px); }
+@keyframes glow {
+    0% { text-shadow: 0 0 5px blue, 0 0 10px blue; }
+    100% { text-shadow: 0 0 20px blue, 0 0 30px white; }
 }
 
-h1.glow {
-  color: blue;
-  text-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue;
-  animation: glowing 1.5s infinite;
+.section {
+    margin: 40px 0;
+    padding: 20px;
 }
 
-@keyframes glowing {
-  0% { text-shadow: 0 0 5px blue, 0 0 10px blue; }
-  50% { text-shadow: 0 0 20px blue, 0 0 30px blue; }
-  100% { text-shadow: 0 0 5px blue, 0 0 10px blue; }
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: blue;
+    color: white;
 }
