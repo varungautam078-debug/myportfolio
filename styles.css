@@ -1,39 +1,62 @@
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .header {
-    text-align: center;
-    padding: 50px;
-    animation: gradientAnimation 3s infinite;
-    color: white;
-}
-
-@keyframes gradientAnimation {
-    0% { background: linear-gradient(270deg, blue, white); }
-    50% { background: linear-gradient(270deg, white, blue); }
-    100% { background: linear-gradient(270deg, blue, white); }
+  text-align: center;
+  padding: 20px;
+  background-color: white;
 }
 
 .header h1 {
-    animation: glow 1.5s infinite alternate;
+  font-size: 2.5em;
+  color: blue;
+  animation: fadeIn 2s;
 }
 
-@keyframes glow {
-    0% { text-shadow: 0 0 5px blue, 0 0 10px blue; }
-    100% { text-shadow: 0 0 20px blue, 0 0 30px white; }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+nav {
+  background-color: blue;
+  padding: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
 }
 
 .section {
-    margin: 40px 0;
-    padding: 20px;
+  padding: 40px 0;
+  background-color: white;
+}
+
+.section:nth-child(even) {
+  background-color: #f4f4f4;
 }
 
 .footer {
-    text-align: center;
-    padding: 20px;
-    background-color: blue;
-    color: white;
+  text-align: center;
+  padding: 20px;
+  background-color: blue;
+  color: white;
+}
+
+.footer p {
+  margin: 0;
 }
